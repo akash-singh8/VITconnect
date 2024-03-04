@@ -17,12 +17,12 @@ const Home = () => {
               Your Gateway to Campus Clubs!{" "}
             </h1>
             <p className="belowtag">
-              Embark on Your Journey: Click to Begin, Unleashing Possibilities
-              with Ideaverse.
+              Develop new skills, expand your horizons, and build meaningful
+              connections. Find the perfect club to help you grow personally and
+              professionally.
             </p>
             <div className="btnsgetgh">
               <button className="getstahrted">Get Started</button>
-              <button className="jjgtth"> View pricing</button>
             </div>
           </div>
         </div>
