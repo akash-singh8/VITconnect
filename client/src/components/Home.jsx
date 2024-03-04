@@ -2,8 +2,12 @@ import React, { useState, useEffect } from "react";
 import img from "../assets/img.png";
 import chat from "../assets/chat.png";
 import Prompt from "./prompt";
-import Event from "./Event";
 import { Link } from "react-router-dom";
+import "aos/dist/aos.css";
+import Navbar from "./Navbar";
+import Footer from "./footer";
+import Contact from "./Contact";
+import Event from "./Event";
 import "../styles/contact.css";
 import "../styles/main.css";
 import bg from "../assets/bg.png";
@@ -32,7 +36,11 @@ const Home = () => {
               professionally.
             </p>
             <div className="btnsgetgh">
-              <button className="getstahrted">Get Started</button>
+              <Link to={"/login"}>
+                <button className="getstahrted">Get Started</button>
+              </Link>
+
+              <button className="jjgtth"> View pricing</button>
             </div>
           </div>
           <div className="bthgn">

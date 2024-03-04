@@ -9,6 +9,7 @@ import NonClub from "./components/nontecClub";
 import UserProfile from "./components/UserProfile";
 import Contact from "./components/Contact";
 import Footer from "./components/footer"; // import About from "./components/about";
+import LoginPage from "./components/LoginPage";
 // import Club from "./components/clubs";
 // import Event from "./components/event";
 // import Contact from "./components/contact"
@@ -25,6 +26,7 @@ const App = () => {
 
           <Route path="/nonClub" element={<NonClub />} />
           <Route path="/profile" element={<UserProfile />} />
+          <Route path="/login" element={<LoginPage />} />
           {/* <Route path="/about" element={<About />} />
           <Route path="/clubs" element={<Club />} />
           <Route path="/event" element={<Event />} />
