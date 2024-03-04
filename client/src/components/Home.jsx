@@ -18,7 +18,7 @@ import hi3 from "../assets/hi3.jpg";
 import techclub from "../assets/techclub.jpg";
 import nontechblub from "../assets/nontechblub.jpg";
 import regionalclub from "../assets/regionalclub.jpg";
-import { signInWithGoogle } from "../firebase";
+import { signInWithGoogle, signOut } from "../firebase";
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
@@ -88,53 +88,42 @@ const Home = () => {
             </div>
             <div className="modelsnxn">
               <div className="modelhsk">
-                <img src={techclub} alt="model image" className="maodelisj" />
                 <Link to={"/technical"}>
                   <img src={hi} alt="model image" className="maodelisj" />
-                </Link>
 
-                <h3 className="modelname">Technical Club</h3>
-                <p className="modeldescriphhtion">
-                  Offers a fantastic way to immerse yourself in the practical
-                  applications of your field, explore cutting-edge technologies,
-                  and cultivate essential skills alongside like-minded peers.
-                </p>
+                  <h3 className="modelname">Technical Club</h3>
+                  <p className="modeldescriphhtion">
+                    Offers a fantastic way to immerse yourself in the practical
+                    applications of your field, explore cutting-edge
+                    technologies, and cultivate essential skills alongside
+                    like-minded peers.
+                  </p>
+                </Link>
               </div>
               <div className="modelhsk">
-                <img
-                  src={nontechblub}
-                  alt="model image"
-                  className="maodelisj"
-                />
                 <Link to={"/nonClub"}>
                   <img src={hi1} alt="model image" className="maodelisj" />
+                  <h3 className="modelname">Non Technical Club</h3>
+                  <p className="modeldescriphhtion">
+                    Provide fantastic opportunities to explore interests outside
+                    of your core academic field. These clubs let you develop
+                    soft skills, pursue hobbies, engage in social activities,
+                    and contribute to your college community.
+                  </p>
                 </Link>
-
-                <h3 className="modelname">Non Technical Club</h3>
-                <p className="modeldescriphhtion">
-                  Provide fantastic opportunities to explore interests outside
-                  of your core academic field. These clubs let you develop soft
-                  skills, pursue hobbies, engage in social activities, and
-                  contribute to your college community.
-                </p>
               </div>
               <div className="modelhsk">
-                <img
-                  src={regionalclub}
-                  alt="model image"
-                  className="maodelisj"
-                />
                 <Link to={"/regClub"}>
                   <img src={hi2} alt="model image" className="maodelisj" />
-                </Link>
 
-                <h3 className="modelname">Regional Club</h3>
-                <p className="modeldescriphhtion">
-                  offer a sense of belonging, connection and provide
-                  opportunities to explore regional traditions, celebrate local
-                  customs, and connect with those who hail from the same part of
-                  the country or world.
-                </p>
+                  <h3 className="modelname">Regional Club</h3>
+                  <p className="modeldescriphhtion">
+                    offer a sense of belonging, connection and provide
+                    opportunities to explore regional traditions, celebrate
+                    local customs, and connect with those who hail from the same
+                    part of the country or world.
+                  </p>
+                </Link>
               </div>
             </div>
           </div>
