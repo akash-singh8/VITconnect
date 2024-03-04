@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../styles/main.css";
+import "../styles/contact.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,7 +20,6 @@ const Contact = () => {
               action="https://formsubmit.co/hanish.tharwani2021@vitbhopal.ac.in"
               method="POST"
               className="cards"
-              data-aos="fade-up"
             >
               <div className="fly">
                 <label className="head_name">Name</label>

@@ -9,7 +9,7 @@
 .box1 {
   width: 500px;
   height: 570px;
-  background: #ea01c8;
+  background: #230094;
   display: grid;
   justify-content: center;
   padding-top: 30px;
@@ -18,7 +18,7 @@
 .box2 {
   width: 500px;
   height: 570px;
-  background: #230094;
+  background: #321f77;
   display: grid;
   justify-content: center;
   padding-top: 30px;
