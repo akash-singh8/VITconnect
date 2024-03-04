@@ -1,8 +1,4 @@
-import React, { useState, useEffect } from "react";
 import "aos/dist/aos.css";
-import Navbar from "./Navbar";
-import Footer from "./footer";
-import Contact from "./Contact";
 import "../styles/contact.css";
 import bg from "../assets/bg.png";
 import hi from "../assets/hi.webp";
@@ -14,7 +10,6 @@ const Home = () => {
   return (
     <>
       <div className="maing">
-        <Navbar />
         <div className="home">
           {/* <img src={bg} alt="bg" className="bg" /> */}
           <div className="home__container">
@@ -116,8 +111,6 @@ const Home = () => {
             </div>
           </div>
         </div> */}
-        <Contact />
-        <Footer data-aos="fade-up" />
       </div>
     </>
   );
