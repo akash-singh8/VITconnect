@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/main.css";
 import vit from "../assets/VITBLOGO.png";
 
@@ -7,7 +8,10 @@ const header = () => {
       <div className="navbar">
         <h1 className="logoname">ClubConnect</h1>
         <ul>
-          <li className="list">Home</li>
+          <Link to={"/"}>
+            <li className="list">Home</li>
+          </Link>
+
           <li className="list">About</li>
           <li className="list">Clubs</li>
           <li className="list">Event</li>
