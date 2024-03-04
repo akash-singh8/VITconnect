@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Event from "./Event";
 
 import "../styles/contact.css";
+import "../styles/main.css";
 import bg from "../assets/bg.png";
 import hi from "../assets/hi.webp";
 import hi1 from "../assets/hi1.webp";
@@ -16,7 +17,6 @@ const Home = () => {
   return (
     <>
       <div className="maing">
-        <Navbar />
         <div className="home">
           {/* <img src={bg} alt="bg" className="bg" /> */}
           <div className="home__container">
@@ -25,12 +25,12 @@ const Home = () => {
               Your Gateway to Campus Clubs!{" "}
             </h1>
             <p className="belowtag">
-              Embark on Your Journey: Click to Begin, Unleashing Possibilities
-              with Ideaverse.
+              Develop new skills, expand your horizons, and build meaningful
+              connections. Find the perfect club to help you grow personally and
+              professionally.
             </p>
             <div className="btnsgetgh">
               <button className="getstahrted">Get Started</button>
-              <button className="jjgtth"> View pricing</button>
             </div>
           </div>
         </div>
@@ -59,44 +59,41 @@ const Home = () => {
         <div className="modelsk">
           <div className="jhhjh">
             <div className="modelgef">
-              <h1 className="lormko">
-                Our AI models are designed to help you achieve your goals
-              </h1>
+              <h1 className="lormko">College Clubs</h1>
               <p className="bvhewj">
-                Ideaverse's AI models are designed to help you achieve
+                From robotics to volunteering, debate to dance, there's a club
+                for every passion. Discover your perfect fit and enhance your
+                college experience.
               </p>
             </div>
             <div className="modelsnxn">
               <div className="modelhsk">
                 <img src={hi} alt="model image" className="maodelisj" />
-                <h3 className="modelname">Model Name lorem</h3>
+                <h3 className="modelname">Technical Club</h3>
                 <p className="modeldescriphhtion">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Offers a fantastic way to immerse yourself in the practical
+                  applications of your field, explore cutting-edge technologies,
+                  and cultivate essential skills alongside like-minded peers.
                 </p>
               </div>
               <div className="modelhsk">
                 <img src={hi1} alt="model image" className="maodelisj" />
-                <h3 className="modelname">Model Name lorem</h3>
+                <h3 className="modelname">Non Technical Club</h3>
                 <p className="modeldescriphhtion">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Provide fantastic opportunities to explore interests outside
+                  of your core academic field. These clubs let you develop soft
+                  skills, pursue hobbies, engage in social activities, and
+                  contribute to your college community.
                 </p>
               </div>
               <div className="modelhsk">
                 <img src={hi2} alt="model image" className="maodelisj" />
-                <h3 className="modelname">Model Name lorem</h3>
+                <h3 className="modelname">Regional Club</h3>
                 <p className="modeldescriphhtion">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className="modelhsk">
-                <img src={hi3} alt="model image" className="maodelisj" />
-                <h3 className="modelname">Model Name lorem</h3>
-                <p className="modeldescriphhtion">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  offer a sense of belonging, connection and provide
+                  opportunities to explore regional traditions, celebrate local
+                  customs, and connect with those who hail from the same part of
+                  the country or world.
                 </p>
               </div>
             </div>
@@ -105,6 +102,22 @@ const Home = () => {
         <Event />
         <Contact />
         <Footer data-aos="fade-up" />
+        {/* <div className="loi">
+          <div className="ipsun">
+            <div className="loj" data-aos="fade-up">
+              <h1 className="lormko">
+                Our Capabilities Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Iure, possimus?
+              </h1>
+              <p className="bvhewj">
+                Ideaverse's AI models are designed to help you achieve
+              </p>
+            </div>
+            <div className="vudoe" data-aos="fade-up">
+              <img src={hi4} alt="model image" className="gmaodelisj" />
+            </div>
+          </div>
+        </div> */}
       </div>
     </>
   );
