@@ -1,14 +1,12 @@
 import React from "react";
 import "../styles/club.css";
-import Navbar from "./Navbar";
-import Footer from "./footer";
+
 import hi1 from "../assets/hi1.webp";
 
 const regClub = () => {
   return (
     <>
       <div className="jhhjhd">
-        <Navbar />
         <div className="jhyjyj">
           <h1 className="jjhj">REGIONAL CLUB</h1>
         </div>
@@ -83,7 +81,6 @@ const regClub = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </>
   );

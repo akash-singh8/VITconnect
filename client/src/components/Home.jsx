@@ -4,13 +4,12 @@ import Navbar from "./Navbar";
 import Footer from "./footer";
 import Contact from "./Contact";
 import Event from "./Event";
-
 import "../styles/contact.css";
 import "../styles/main.css";
 import bg from "../assets/bg.png";
-import hi from "../assets/hi.webp";
-import hi1 from "../assets/hi1.webp";
-import hi2 from "../assets/hi2.jpg";
+import hi from "../assets/technical.jpg";
+import hi1 from "../assets/nontechnical.jpg";
+import hi2 from "../assets/regional.jpg";
 import hi3 from "../assets/hi3.jpg";
 
 const Home = () => {
@@ -72,7 +71,10 @@ const Home = () => {
             </div>
             <div className="modelsnxn">
               <div className="modelhsk">
-                <img src={hi} alt="model image" className="maodelisj" />
+                <Link to={"/technical"}>
+                  <img src={hi} alt="model image" className="maodelisj" />
+                </Link>
+
                 <h3 className="modelname">Technical Club</h3>
                 <p className="modeldescriphhtion">
                   Offers a fantastic way to immerse yourself in the practical
@@ -81,7 +83,10 @@ const Home = () => {
                 </p>
               </div>
               <div className="modelhsk">
-                <img src={hi1} alt="model image" className="maodelisj" />
+                <Link to={"/nonClub"}>
+                  <img src={hi1} alt="model image" className="maodelisj" />
+                </Link>
+
                 <h3 className="modelname">Non Technical Club</h3>
                 <p className="modeldescriphhtion">
                   Provide fantastic opportunities to explore interests outside
@@ -91,7 +96,10 @@ const Home = () => {
                 </p>
               </div>
               <div className="modelhsk">
-                <img src={hi2} alt="model image" className="maodelisj" />
+                <Link to={"/regClub"}>
+                  <img src={hi2} alt="model image" className="maodelisj" />
+                </Link>
+
                 <h3 className="modelname">Regional Club</h3>
                 <p className="modeldescriphhtion">
                   offer a sense of belonging, connection and provide
