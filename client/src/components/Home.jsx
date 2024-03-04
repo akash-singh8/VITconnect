@@ -1,10 +1,13 @@
+import React, { useState, useEffect } from "react";
+import img from "../assets/img.png";
+import chat from "../assets/chat.png";
+import Prompt from "./prompt";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import Navbar from "./Navbar";
 import Footer from "./footer";
 import Contact from "./Contact";
 import Event from "./Event";
-
 import "../styles/contact.css";
 import "../styles/main.css";
 import bg from "../assets/bg.png";
@@ -18,6 +21,9 @@ import regionalclub from "../assets/regionalclub.jpg";
 import { signInWithGoogle } from "../firebase";
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const closeModal = () => setShowModal(false);
   return (
     <>
       <div className="maing">
@@ -38,6 +44,14 @@ const Home = () => {
                 Get Started
               </button>
             </div>
+          </div>
+          <div className="bthgn">
+            <button
+              className={`circle ${showModal ? "pop" : ""}`}
+              onClick={() => setShowModal(true)}
+            >
+              <img src={chat} alt="chat" className="chat" />
+            </button>
           </div>
         </div>
 
@@ -131,6 +145,7 @@ const Home = () => {
           </div>
         </div> */}
       </div>
+      {showModal && <Prompt closeModal={closeModal} />}
     </>
   );
 };
