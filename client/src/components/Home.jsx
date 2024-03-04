@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <>
       <div className="maing">
-        <div className="home">
+        <div className="home" id="home">
           {/* <img src={bg} alt="bg" className="bg" /> */}
           <div className="home__container">
             <h1 className="loremheading">
@@ -55,7 +55,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="abouUs">
+        <div className="abouUs" id="aboutus">
           <h1 className="about">About Us</h1>
 
           <div className="jsagb">
@@ -76,7 +76,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="modelsk">
+        <div className="modelsk" id="clubs">
           <div className="jhhjh">
             <div className="modelgef">
               <h1 className="lormko">College Clubs</h1>

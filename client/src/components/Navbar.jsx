@@ -12,10 +12,21 @@ const header = () => {
             <li className="list">Home</li>
           </Link>
 
-          <li className="list">About</li>
-          <li className="list">Clubs</li>
-          <li className="list">Event</li>
-          <li className="list">Contact</li>
+          <a href={"/#aboutus"}>
+            <li className="list">About</li>
+          </a>
+
+          <a href={"/#clubs"}>
+            <li className="list">Clubs</li>
+          </a>
+
+          <a href={"/#events"}>
+            <li className="list">Event</li>
+          </a>
+
+          <a href={"/#contact"}>
+            <li className="list">Contact</li>
+          </a>
         </ul>
         <img src={vit} alt="" className="vitlogo" />
       </div>

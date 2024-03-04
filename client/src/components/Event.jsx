@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Event = () => {
   return (
     <>
-      <div className="kjsdhhhj">
+      <div className="kjsdhhhj" id="events">
         <h1 className="jkdnmn">EVENTS</h1>
 
         <div className="ashdj">
