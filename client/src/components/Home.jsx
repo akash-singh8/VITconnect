@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import "../styles/contact.css";
 import bg from "../assets/bg.png";
@@ -22,7 +23,10 @@ const Home = () => {
               with Ideaverse.
             </p>
             <div className="btnsgetgh">
-              <button className="getstahrted">Get Started</button>
+              <Link to={"/login"}>
+                <button className="getstahrted">Get Started</button>
+              </Link>
+
               <button className="jjgtth"> View pricing</button>
             </div>
           </div>
