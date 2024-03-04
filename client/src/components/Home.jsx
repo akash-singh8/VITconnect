@@ -1,3 +1,7 @@
+import React, { useState, useEffect } from "react";
+import img from "../assets/img.png";
+import chat from "../assets/chat.png";
+import Prompt from "./prompt";
 import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import Navbar from "./Navbar";
@@ -11,8 +15,15 @@ import hi from "../assets/technical.jpg";
 import hi1 from "../assets/nontechnical.jpg";
 import hi2 from "../assets/regional.jpg";
 import hi3 from "../assets/hi3.jpg";
+import techclub from "../assets/techclub.jpg";
+import nontechblub from "../assets/nontechblub.jpg";
+import regionalclub from "../assets/regionalclub.jpg";
+import { signInWithGoogle } from "../firebase";
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const closeModal = () => setShowModal(false);
   return (
     <>
       <div className="maing">
@@ -29,12 +40,18 @@ const Home = () => {
               professionally.
             </p>
             <div className="btnsgetgh">
-              <Link to={"/login"}>
-                <button className="getstahrted">Get Started</button>
-              </Link>
-
-              <button className="jjgtth"> View pricing</button>
+              <button className="getstahrted" onClick={signInWithGoogle}>
+                Get Started
+              </button>
             </div>
+          </div>
+          <div className="bthgn">
+            <button
+              className={`circle ${showModal ? "pop" : ""}`}
+              onClick={() => setShowModal(true)}
+            >
+              <img src={chat} alt="chat" className="chat" />
+            </button>
           </div>
         </div>
 
@@ -71,6 +88,7 @@ const Home = () => {
             </div>
             <div className="modelsnxn">
               <div className="modelhsk">
+                <img src={techclub} alt="model image" className="maodelisj" />
                 <Link to={"/technical"}>
                   <img src={hi} alt="model image" className="maodelisj" />
                 </Link>
@@ -83,6 +101,11 @@ const Home = () => {
                 </p>
               </div>
               <div className="modelhsk">
+                <img
+                  src={nontechblub}
+                  alt="model image"
+                  className="maodelisj"
+                />
                 <Link to={"/nonClub"}>
                   <img src={hi1} alt="model image" className="maodelisj" />
                 </Link>
@@ -96,6 +119,11 @@ const Home = () => {
                 </p>
               </div>
               <div className="modelhsk">
+                <img
+                  src={regionalclub}
+                  alt="model image"
+                  className="maodelisj"
+                />
                 <Link to={"/regClub"}>
                   <img src={hi2} alt="model image" className="maodelisj" />
                 </Link>
@@ -129,6 +157,7 @@ const Home = () => {
           </div>
         </div> */}
       </div>
+      {showModal && <Prompt closeModal={closeModal} />}
     </>
   );
 };
