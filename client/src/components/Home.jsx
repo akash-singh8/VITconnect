@@ -4,6 +4,9 @@ import hi from "../assets/hi.webp";
 import hi1 from "../assets/hi1.webp";
 import hi2 from "../assets/hi2.jpg";
 import hi3 from "../assets/hi3.jpg";
+import techclub from "../assets/techclub.jpg";
+import nontechblub from "../assets/nontechblub.jpg";
+import regionalclub from "../assets/regionalclub.jpg";
 import { signInWithGoogle } from "../firebase";
 
 const Home = () => {
@@ -63,7 +66,7 @@ const Home = () => {
             </div>
             <div className="modelsnxn">
               <div className="modelhsk">
-                <img src={hi} alt="model image" className="maodelisj" />
+                <img src={techclub} alt="model image" className="maodelisj" />
                 <h3 className="modelname">Technical Club</h3>
                 <p className="modeldescriphhtion">
                   Offers a fantastic way to immerse yourself in the practical
@@ -72,7 +75,11 @@ const Home = () => {
                 </p>
               </div>
               <div className="modelhsk">
-                <img src={hi1} alt="model image" className="maodelisj" />
+                <img
+                  src={nontechblub}
+                  alt="model image"
+                  className="maodelisj"
+                />
                 <h3 className="modelname">Non Technical Club</h3>
                 <p className="modeldescriphhtion">
                   Provide fantastic opportunities to explore interests outside
@@ -82,7 +89,11 @@ const Home = () => {
                 </p>
               </div>
               <div className="modelhsk">
-                <img src={hi2} alt="model image" className="maodelisj" />
+                <img
+                  src={regionalclub}
+                  alt="model image"
+                  className="maodelisj"
+                />
                 <h3 className="modelname">Regional Club</h3>
                 <p className="modeldescriphhtion">
                   offer a sense of belonging, connection and provide
