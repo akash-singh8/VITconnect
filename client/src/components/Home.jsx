@@ -100,8 +100,6 @@ const Home = () => {
           </div>
         </div>
         <Event />
-        <Contact />
-        <Footer data-aos="fade-up" />
         {/* <div className="loi">
           <div className="ipsun">
             <div className="loj" data-aos="fade-up">
