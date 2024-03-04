@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "aos/dist/aos.css";
-import Navbar from "./Navbar";
-import Footer from "./footer";
-import Contact from "./Contact";
+import img from "../assets/img.png";
+import chat from "../assets/chat.png";
+import Prompt from "./prompt";
 import Event from "./Event";
-
+import { Link } from "react-router-dom";
 import "../styles/contact.css";
 import "../styles/main.css";
 import bg from "../assets/bg.png";
@@ -14,6 +13,9 @@ import hi2 from "../assets/hi2.jpg";
 import hi3 from "../assets/hi3.jpg";
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const closeModal = () => setShowModal(false);
   return (
     <>
       <div className="maing">
@@ -32,6 +34,14 @@ const Home = () => {
             <div className="btnsgetgh">
               <button className="getstahrted">Get Started</button>
             </div>
+          </div>
+          <div className="bthgn">
+            <button
+              className={`circle ${showModal ? "pop" : ""}`}
+              onClick={() => setShowModal(true)}
+            >
+              <img src={chat} alt="chat" className="chat" />
+            </button>
           </div>
         </div>
 
@@ -117,6 +127,7 @@ const Home = () => {
           </div>
         </div> */}
       </div>
+      {showModal && <Prompt closeModal={closeModal} />}
     </>
   );
 };
