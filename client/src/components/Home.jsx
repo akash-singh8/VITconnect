@@ -1,3 +1,11 @@
+import { Link } from "react-router-dom";
+import "aos/dist/aos.css";
+import Navbar from "./Navbar";
+import Footer from "./footer";
+import Contact from "./Contact";
+import Event from "./Event";
+
+import "../styles/contact.css";
 import "../styles/main.css";
 import bg from "../assets/bg.png";
 import hi from "../assets/hi.webp";
@@ -105,6 +113,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <Event />
         {/* <div className="loi">
           <div className="ipsun">
             <div className="loj" data-aos="fade-up">

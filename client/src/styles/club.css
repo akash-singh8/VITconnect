@@ -1,0 +1,81 @@
+.jhyjyj {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.jjhj {
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+.hjabs {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-gap: 40px;
+}
+
+.hjsgh {
+    width: 1250px;
+    height: 400px;
+    background-color: #230094;
+    border-radius: 10px;
+    display: flex;
+    padding: 30px 40px;
+    justify-content: space-between;
+}
+
+.jefjh {
+    border-radius: 10px;
+}
+
+.jahdj {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 0.6px;
+}
+
+.bhasbhh {
+    width: 620px;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+    color: #cdcdcd;
+    margin-top: 20px;
+}
+
+.jash {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.mhbas {
+    width: 160px;
+    color: #000;
+    background-color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    padding: 16px 30px;
+    font-size: 16px;
+
+}
+
+.mhbas1 {
+    width: 160px;
+    color: #000;
+    background-color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    padding: 16px 30px;
+    margin-left: 20px;
+    font-size: 16px;
+}

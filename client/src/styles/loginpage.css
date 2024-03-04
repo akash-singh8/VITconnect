@@ -1,0 +1,33 @@
+.loginbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 13%;
+  color: white;
+}
+
+.loginbox button {
+  background: #0e0363;
+  width: 80%;
+  height: 30px;
+  color: white;
+  border: none;
+}
+
+.loginboxch1 {
+  width: 100%;
+}
+.loginboxch1 h1 {
+  margin-bottom: 20px;
+}
+.loginboxch1 p {
+  margin-bottom: 20px;
+}
+.loginboxch1 img {
+  margin-right: 20px;
+}
+
+@media (max-width: 800px) {
+  .loginbox {
+    flex-direction: column;
+  }
+}
