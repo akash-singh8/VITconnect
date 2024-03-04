@@ -4,6 +4,7 @@ import hi from "../assets/hi.webp";
 import hi1 from "../assets/hi1.webp";
 import hi2 from "../assets/hi2.jpg";
 import hi3 from "../assets/hi3.jpg";
+import { signInWithGoogle } from "../firebase";
 
 const Home = () => {
   return (
@@ -22,7 +23,9 @@ const Home = () => {
               professionally.
             </p>
             <div className="btnsgetgh">
-              <button className="getstahrted">Get Started</button>
+              <button className="getstahrted" onClick={signInWithGoogle}>
+                Get Started
+              </button>
             </div>
           </div>
         </div>
