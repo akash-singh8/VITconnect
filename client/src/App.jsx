@@ -2,20 +2,21 @@ import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
-// import About from "./components/about";
-// import Club from "./components/clubs";
-// import Event from "./components/event";
-// import Contact from "./components/contact";
+import TecClub from "./components/tecClub";
+import RegClub from "./components/regClub";
+import NonClub from "./components/nontecClub";
+
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/clubs" element={<Club />} />
-          <Route path="/event" element={<Event />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/technical" element={<TecClub />} />
+
+          <Route path="/regClub" element={<RegClub />} />
+
+          <Route path="/nonClub" element={<NonClub />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -3,6 +3,8 @@ import "aos/dist/aos.css";
 import Navbar from "./Navbar";
 import Footer from "./footer";
 import Contact from "./Contact";
+import Event from "./Event";
+
 import "../styles/contact.css";
 import bg from "../assets/bg.png";
 import hi from "../assets/hi.webp";
@@ -100,22 +102,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className="loi">
-          <div className="ipsun">
-            <div className="loj" data-aos="fade-up">
-              <h1 className="lormko">
-                Our Capabilities Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Iure, possimus?
-              </h1>
-              <p className="bvhewj">
-                Ideaverse's AI models are designed to help you achieve
-              </p>
-            </div>
-            <div className="vudoe" data-aos="fade-up">
-              <img src={hi4} alt="model image" className="gmaodelisj" />
-            </div>
-          </div>
-        </div> */}
+        <Event />
         <Contact />
         <Footer data-aos="fade-up" />
       </div>
